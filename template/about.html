@@ -1,0 +1,85 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h4>Sobre nosotros </h4>
+                    <div class="bt-option">
+                        <a href="{% url 'Index' %}"><i class="fa fa-home"></i> Home</a>
+                        <span>Acerda de</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+
+<!-- About Section Begin -->
+<section class="about-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-text">
+                    <div class="at-title">
+                        <h3>Bienvenidos a Alex Renta </h3>
+                        <p>Lorem Ipsum ha sido el texto ficticio estándar de la industria desde el siglo XVI, cuando un impresora desconocida tomó una galera de tipo. </p>
+                    </div>
+                    <div class="at-feature">
+                        <div class="af-item">
+                            <div class="af-icon">
+                                <img src="{% static 'img/chooseus/chooseus-icon-1.png' %}" alt="">
+                            </div>
+                            <div class="af-text">
+                                <h6>Encuentra tu futuro hogar </h6>
+                                <p>Te ayudamos a encontrar un nuevo hogar ofreciéndote una inmobiliaria inteligente. </p>
+                            </div>
+                        </div>
+                        <div class="af-item">
+                            <div class="af-icon">
+                                <img src="{% static 'img/chooseus/chooseus-icon-2.png' %}" alt="">
+                            </div>
+                            <div class="af-text">
+                                <h6>Agentes experimentados </h6>
+                                <p>Encuentre un agente que conozca mejor su mercado </p>
+                            </div>
+                        </div>
+                        <div class="af-item">
+                            <div class="af-icon">
+                                <img src="{% static 'img/chooseus/chooseus-icon-3.png' %}" alt="">
+                            </div>
+                            <div class="af-text">
+                                <h6>Comprar o alquilar casas </h6>
+                                <p>Millones de casas y apartamentos en tus ciudades favoritas </p>
+                            </div>
+                        </div>
+                        <div class="af-item">
+                            <div class="af-icon">
+                                <img src="{% static 'img/chooseus/chooseus-icon-4.png' %}" alt="">
+                            </div>
+                            <div class="af-text">
+                                <h6>Enumere su propia propiedad </h6>
+                                <p>Regístrese ahora y venda o alquile sus propias propiedades </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-pic set-bg" data-setbg="{% static 'img/about-us.jpg' %}">
+                    <a href="https://www.youtube.com/watch?v=pBKjJRTyBm8" class="play-btn video-popup">
+                        <i class="fa fa-play-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section End -->
+
+{% endblock %}
